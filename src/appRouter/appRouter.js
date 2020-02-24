@@ -7,7 +7,7 @@ export default class AppRouter extends React.Component {
   
 
   render() {
-    return <HashRouter basename={process.env.PUBLIC_URL}>
+    return <HashRouter >
     
       <div>
       <Navigation />
