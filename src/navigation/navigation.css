@@ -1,0 +1,14 @@
+.color-nav {
+    background-color:white;
+}
+
+.navbar-light .navbar-toggler {
+    border:none ;
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler:hover:focus{
+    outline: none;
+    border: none;
+    border-color: transparent;
+}
