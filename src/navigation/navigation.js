@@ -9,8 +9,9 @@ import './navigation.css';
 export default class Navigation extends React.Component {
     navbar = { backgroundColor: '#F16E10 !important' };
     render() {
+        console.log("asdacd")
         return <Navbar className="color-nav" expand="lg">
-            <Navbar.Brand href="/">
+            <Navbar.Brand href={process.env.PUBLIC_URL}>
                 <img
                     src={logo}
                     width="270"
