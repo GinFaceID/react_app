@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavItem, Button, Col, Row } from 'react-bootstrap';
+import { Navbar, Nav, Col, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
 import { SHOP_NAME } from '../constant';
 import logo from '../asset/image/logo.png';
@@ -14,8 +13,8 @@ export default class Navigation extends React.Component {
             <Navbar.Brand href={process.env.PUBLIC_URL}>
                 <img
                     src={logo}
-                    width="270"
-                    height="45"
+                    width="240"
+                    height="40"
                     className="d-inline-block align-top"
                     alt={SHOP_NAME}
                 />
