@@ -15,6 +15,7 @@ function App() {
     <MessengerCustomerChat
       pageId="2025900314121570"
       appId="638776666894882"
+      themeColor="#EAD7C3"
     />
   </Container>
 }
