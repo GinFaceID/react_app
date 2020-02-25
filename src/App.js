@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AppRouter from './appRouter/appRouter';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-import {WhatsappShareButton, WhatsappIcon} from 'react-share';
+import whatsappIcon from './asset/image/whatsapp_icon.png';
 
 function App() {
   return <Container>
@@ -24,10 +24,9 @@ function App() {
               right:25,
               bottom: 90,
               borderRadius: 30,
-              boxShadow: "2px 3px 6px  #9E9E9E",
-            backgroundColor:'#25D366'}}
+              boxShadow: "2px 3px 6px  #9E9E9E"}}
           >
-            <WhatsappIcon size={60} round />
+            <Image style={{width:60, height:60}} src={whatsappIcon} roundedCircle />
           </a>
   </Container>
 }
