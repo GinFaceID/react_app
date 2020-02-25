@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef3412b481c9644f1258b4dc1f8c245b",
+    "revision": "5692ec130ba72ed50e71643f864460bf",
     "url": "/react_app/index.html"
   },
   {
-    "revision": "03cf0acff8384ab93330",
+    "revision": "b744a5f4caef3a1f5bca",
     "url": "/react_app/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "96cfb41aec4327c7b15c",
-    "url": "/react_app/static/css/main.29b8b983.chunk.css"
+    "revision": "246ba6a17e6be8d9d629",
+    "url": "/react_app/static/css/main.dc5ec440.chunk.css"
   },
   {
-    "revision": "03cf0acff8384ab93330",
-    "url": "/react_app/static/js/2.0515eea1.chunk.js"
+    "revision": "b744a5f4caef3a1f5bca",
+    "url": "/react_app/static/js/2.1916f5b5.chunk.js"
   },
   {
     "revision": "bf23039b4e70a07c5aeb1b4010df3572",
-    "url": "/react_app/static/js/2.0515eea1.chunk.js.LICENSE.txt"
+    "url": "/react_app/static/js/2.1916f5b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96cfb41aec4327c7b15c",
-    "url": "/react_app/static/js/main.de8761ee.chunk.js"
+    "revision": "246ba6a17e6be8d9d629",
+    "url": "/react_app/static/js/main.64255f19.chunk.js"
   },
   {
     "revision": "e46ca46ba4d555d9a740",
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d6394da0b36807b0637c8642fccaab6d",
     "url": "/react_app/static/media/logo.d6394da0.png"
+  },
+  {
+    "revision": "4a66351fbc0c358a5bbeccf5c9491719",
+    "url": "/react_app/static/media/whatsapp_icon.4a66351f.png"
   }
 ]);
