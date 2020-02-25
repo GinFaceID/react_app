@@ -18,11 +18,8 @@ function App() {
       appId="638776666894882"
       themeColor="#EAD7C3"
     />
-    <WhatsappShareButton
-            url={"bit.ly/2mcMygY"}
-            title={""}
-            separator=":: "
-            className="Demo__some-network__share-button"
+    
+    <a href="https://bit.ly/2mcMygY"
             style={{position: 'fixed',
               right:25,
               bottom: 90,
@@ -31,7 +28,7 @@ function App() {
             backgroundColor:'#25D366'}}
           >
             <WhatsappIcon size={60} round />
-          </WhatsappShareButton>
+          </a>
   </Container>
 }
 
