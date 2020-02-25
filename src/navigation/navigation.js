@@ -7,9 +7,33 @@ import './navigation.css';
 
 export default class Navigation extends React.Component {
     navbar = { backgroundColor: '#F16E10 !important' };
+
+    constructor(props) {
+        super(props);
+
+    // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+    if (typeof window !== 'undefined') {
+      let prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        const maxScroll = document.body.clientHeight - window.innerHeight;
+        let currentScrollPos = window.pageYOffset;
+        if (
+            (maxScroll > 0 && prevScrollpos > currentScrollPos && prevScrollpos <= maxScroll) 
+          || (maxScroll <= 0 && prevScrollpos > currentScrollPos)
+          || (prevScrollpos <= 0 && currentScrollPos <= 0)
+          ) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-5.0rem"; // adjustable based your need
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
+    }
+
+        
     render() {
-        console.log("asdacd")
-        return <Navbar className="color-nav" expand="lg">
+        return <Navbar id="navbar" className={"color-nav"} sticky="top" expand="md"  collapseOnSelect="true">
             <Navbar.Brand href={process.env.PUBLIC_URL}>
                 <img
                     src={logo}

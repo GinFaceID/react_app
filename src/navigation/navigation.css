@@ -1,5 +1,6 @@
 .color-nav {
     background-color:white;
+    transition: top 0.5s;
 }
 
 .navbar-light .navbar-toggler {
