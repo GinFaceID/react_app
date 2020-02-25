@@ -24,13 +24,13 @@ function App() {
             separator=":: "
             className="Demo__some-network__share-button"
             style={{position: 'fixed',
-              right:20,
-              bottom: 12,
-              borderRadius: 35,
+              right:25,
+              bottom: 90,
+              borderRadius: 30,
               boxShadow: "2px 3px 6px  #9E9E9E",
             backgroundColor:'#25D366'}}
           >
-            <WhatsappIcon size={70} round />
+            <WhatsappIcon size={60} round />
           </WhatsappShareButton>
   </Container>
 }
