@@ -11,13 +11,38 @@ export default class Main extends React.Component {
         photos: [],
         title: ""
     }
+    query = `{
+        story(slug:"abc"){
+          title,
+          igPost{
+            displayUrl,
+            caption
+          }
+        }
+      }`
+
+    getPosts = async (query) => {
+        try {
+          const response = await axios.post('http://localhost:8080/graphql', {
+            query,
+
+          });
+        console.log(response);
+          return response.data.data.story;
+      
+        } catch (error) {
+          // If there's an error, set the error to the state
+          console.log("graphql error")
+        }
+      }
 
     async componentDidMount() {
         try {
-            const result = await this.fetchInstagramPhotos('https://www.instagram.com/gin_faceid.hk/')
-            console.log(result.title)
+            const result = await this.getPosts(this.query)
+            // const result = await this.fetchInstagramPhotos('https://www.instagram.com/gin_faceid.hk/')
+            console.log(JSON.stringify(result))
             this.setState({
-                photos: result.photos,
+                photos: result.igPost,
                 title: result.title
             })
             // Do something with the photos
@@ -28,6 +53,7 @@ export default class Main extends React.Component {
 
     async fetchInstagramPhotos(accountUrl) {
         const response = await axios.get(accountUrl)
+        console.log(response.data)
         var title = response.data.match(instagramTitleRegExp)[1]
         console.log(title)
         var data = response.data.match(instagramRegExp)[1];
