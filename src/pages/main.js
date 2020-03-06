@@ -12,7 +12,7 @@ export default class Main extends React.Component {
 
     getPosts = async (query) => {
         try {
-          const response = await axios.get('http://gin-faceid-backend.herokuapp.com/');
+          const response = await axios.get('https://gin-faceid-backend.herokuapp.com/');
         console.log(response);
           return response.data;
       
